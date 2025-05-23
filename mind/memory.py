@@ -6,7 +6,9 @@ class TemporalMemory:
         self.times = []
 
     def append(self, embedding, t):
-        self.embeddings.append(embedding.detach())
+        if embedding.dim() == 2 and embedding.shape[0] == 1:
+            embedding = embedding.squeeze(0)
+        self.embeddings.append(embedding.detach())  # passiva
         self.times.append(t)
 
     def get(self):

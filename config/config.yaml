@@ -5,27 +5,34 @@ gap_between_digits: 200
 epochs: 5
 batch_size: 10
 lr: 0.001
-n_samples: 990
+n_samples: 3000
 time_stride: 10
 noise_std: 0.1
-digits: [2, 5, 7]
-digits_test_association: [2, 5, 7]
+digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+digits_test_association: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+digits_test_compare: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 vocab_labels:
   0: "zero"
   1: "one"
   2: "two"
   3: "three"
+  4: "four"
   5: "five"
   6: "six"
   7: "seven"
+  8: "eight"
   9: "nine"
 digit_words:
   0: "zero"
   1: "one"
   2: "two"
   3: "three"
+  4: "four"
   5: "five"
   6: "six"
   7: "seven"
+  8: "eight"
   9: "nine"
 digits_test_compare: [2, 5, 7]
+distractor_words : ["line", "tree", "cow", "site"]
+distractor_ratio : 0.1

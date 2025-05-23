@@ -5,7 +5,7 @@ from mind.encoders import ImageEncoder, TextEncoder
 from mind.reconstructor import Reconstructor
 from mind.association import TemporalAssociationLayer
 from mind.memory import TemporalMemory
-from training.training import train_loop
+from training.learning_process import train_loop
 from config.config import load_config
 from data.data_random_time import load_mnist_random_time  # IMPORTANTE: versione con timestamp casuali
 
